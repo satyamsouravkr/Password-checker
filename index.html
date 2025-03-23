@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hacker Password Strength Checker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Title with Blinking Neon Effect -->
+    <h1 id="title">Password Strength Checker</h1>
+
+    <!-- Add a Background Animation -->
+    <div class="hacker-background"></div>
+
+    <div class="form-wrapper">
+      <h2>Check Your Password Strength</h2>
+      
+      <div class="password-input-wrapper">
+        <input type="password" id="password" placeholder="Enter your password" oninput="checkStrength()">
+        <button type="button" id="toggle-visibility" onclick="togglePasswordVisibility()">Show</button>
+      </div>
+
+      <div id="strength" class="strength-indicator">Strength: </div>
+      <div id="password-feedback" class="password-feedback"></div>
+      
+      <div id="password-guidelines" class="password-guidelines">
+        <h4>Password should include:</h4>
+        <ul>
+          <li id="length-guideline" class="guideline">8+ characters</li>
+          <li id="digit-guideline" class="guideline">At least 1 number</li>
+          <li id="uppercase-guideline" class="guideline">At least 1 uppercase letter</li>
+          <li id="special-char-guideline" class="guideline">At least 1 special character</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

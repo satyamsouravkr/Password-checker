@@ -1,0 +1,115 @@
+/* Default Hacker Theme */
+body {
+    font-family: 'Courier New', monospace;
+    background: black;
+    color: #00ff00;
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    transition: background 0.5s ease-in-out;
+}
+
+/* Dynamic Title Color */
+#title {
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+    animation: blinkText 1s infinite alternate;
+    transition: color 0.5s, text-shadow 0.5s;
+}
+
+/* Title Blinking Effect */
+@keyframes blinkText {
+    0% { opacity: 1; }
+    100% { opacity: 0.2; }
+}
+
+/* Form Wrapper */
+.form-wrapper {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px #00ff00;
+    transition: box-shadow 0.5s;
+}
+
+/* Password Strength Indicator */
+.strength-indicator {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: color 0.5s;
+}
+
+/* Password Input */
+.password-input-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="password"] {
+    width: 80%;
+    padding: 12px;
+    border: 2px solid #00ff00;
+    background: black;
+    color: #00ff00;
+    font-size: 16px;
+}
+
+/* Button */
+button {
+    background-color: #00ff00;
+    color: black;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Weak Password Color */
+.weak {
+    color: red !important;
+    text-shadow: 0 0 10px red;
+}
+
+/* Medium Password Color */
+.medium {
+    color: orange !important;
+    text-shadow: 0 0 10px orange;
+}
+
+/* Strong Password Color */
+.strong {
+    color: yellow !important;
+    text-shadow: 0 0 10px yellow;
+}
+
+/* Very Strong Password Color */
+.very-strong {
+    color: lime !important;
+    text-shadow: 0 0 10px lime;
+}
+
+/* Dynamic Background Colors */
+.bg-weak {
+    background: #330000 !important;
+}
+
+.bg-medium {
+    background: #332200 !important;
+}
+
+.bg-strong {
+    background: #223300 !important;
+}
+
+.bg-very-strong {
+    background: #003300 !important;
+}
